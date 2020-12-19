@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Helvetica Neue Cyr Thin';
+    src: url('HelveticaNeueCyr-Thin.eot');
+    src: url('HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+    url('HelveticaNeueCyr-Thin.woff') format('woff'),
+    url('HelveticaNeueCyr-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }

@@ -1,22 +1,7 @@
-.page {
-  background-color: #101010;
-  display: flex;
-  max-width: 1141px;
-  align-items: center;
-  justify-content: center;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  &__main-img {
-    max-width: 751px;
-    max-height: 422px;
-  }
-  &__about-img {
-    max-width: 300px;
-    max-height: 215px;
-    z-index: 2;
-  }
-}
+@import './vendor/normalize.css';
+@import '../fonts/HelveticaNeueCyr-Thin/helveticaNeueCyr.css';
+@import '../fonts/MyriadPro-Regular/myriadPro-Regular.css';
+@import '../fonts/BebasNeueRegular/stylesheet.css';
+@import './abstracts.scss';
+@import './blocks/page.scss';
+@import './blocks/header.scss';

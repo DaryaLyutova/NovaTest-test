@@ -2,6 +2,7 @@ $fontFamily1: 'Helvetica Neue Cyr Thin', 'AdobeInvisFont', 'Myriad Pro Regular';
 $fontFamily2: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
 $colorPink: #E71E6E;
 $colorWigth: #FFFFFF;
+$colorGrey: #101010;
 
 @mixin headerTitle {
     font-family: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
@@ -10,4 +11,14 @@ $colorWigth: #FFFFFF;
     text-align: left;
     font-style: normal;
     font-weight: normal;
+}
+
+@mixin rowDirection {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin columnDirection {
+    display: flex;
+    flex-direction: column;
 }

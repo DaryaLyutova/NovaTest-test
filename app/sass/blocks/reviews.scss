@@ -1,0 +1,13 @@
+.reviews {
+  @include rowDirection ();
+
+  &__title {
+
+  }
+  &__items{
+    @include rowDirection ();
+  }
+  &__item{
+
+  }
+}

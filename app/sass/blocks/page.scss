@@ -1,7 +1,7 @@
 .page {
   background-color: #101010;
-  display: flex;
-  flex-direction: column;
+  @include columnDirection ();
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 }

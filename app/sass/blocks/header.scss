@@ -1,66 +1,57 @@
 .header {
-    max-width: 1141px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  max-width: 1141px;
+  width: 100%;
+  height: 422px;
+  @include rowDirection ();
+  justify-content: space-between;
+  background-size: 751px 422px;
+  background: url('../../images/dest/Layer 0@1X.jpeg') center no-repeat;
+
+  &__about {
+    @include columnDirection ();
+    align-items: flex-start;
+    max-width: 300px;
+    text-align: left;
+  }
+  &__title {
+    @include headerTitle();
+    font-size: 100px;
+    line-height: 100px;
+    margin: 0;
+  }
+  &__subtitle {
+    font-size: 40px;
+    @include headerTitle();
+    margin: 0;
+    padding: 0;
+    &_color {
+      color: $colorPink;
+    }
+  }
+  &__main {
+    @include columnDirection ();
+    align-items: center;
+  }
+  &__logo {
+    width: 70px;
+    height: 70px;
+    padding-bottom: 9px;
+  }
+  &__navigation {
     padding-top: 30px;
-    justify-content: space-between;
-    z-index: 2;
-
-    &__about {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      max-width: 300px;
-      text-align: left;
-    }
-    &__title {      
-      @include headerTitle ();
-      font-size: 100px;
-      line-height: 100px;
-      margin: 0;
-    }
-    &__subtitle{
-        font-size: 40px;
-        @include headerTitle ();
-        margin: 0;
-        padding: 0;
-        &_color {
-          color: $colorPink;
-        }
-    }
-    &__main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__logo {
-      width: 70px;
-      height: 70px;
-      padding-bottom: 9px;
-    }
-    &__navigation {
-      padding-top: 30px;
-      display: flex;
-      flex-direction: column;
-    }
-    &__button {
-      width: 166px;
-      height: 26px;
-      background-color: $colorPink;   
-      border: none;
-      font-family: $fontFamily1;
-      line-height: 20px;
-      color: $colorWigth;
-      font-size: 20px;
-      margin: 0;
-      padding: 5px 41px 5px 44px;
-      margin-bottom: 3px;
-    }
+    @include columnDirection ();
   }
-
-  .main-img {
-    max-width: 751px;
-    max-height: 422px;
-    position: absolute;
+  &__button {
+    width: 166px;
+    height: 26px;
+    background-color: $colorPink;
+    border: none;
+    font-family: $fontFamily1;
+    line-height: 20px;
+    color: $colorWigth;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 41px 5px 44px;
+    margin-bottom: 3px;
   }
+}

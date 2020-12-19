@@ -1,49 +1,66 @@
 .header {
     max-width: 1141px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    
-    &__main {
+    padding-top: 30px;
+    justify-content: space-between;
+    z-index: 2;
+
+    &__about {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       max-width: 300px;
       text-align: left;
-      font-family: $fontFamily1;
-    }
-    &__main-img {
-      max-width: 751px;
-      max-height: 422px;
     }
     &__title {      
-      text-align: left;
-      font-weight: bold;
-      font-weight: 100px;
-      text-transform: uppercase;      
-      color: $colorWigth;
+      @include headerTitle ();
+      font-size: 100px;
+      line-height: 100px;
+      margin: 0;
     }
     &__subtitle{
-        text-align: left;
-        font-size: 60px;
-        font-weight: 80px;
-
-        text-transform: uppercase;
-        color: $colorWigth;
-        word-break:  keep-all;
+        font-size: 40px;
+        @include headerTitle ();
+        margin: 0;
+        padding: 0;
         &_color {
           color: $colorPink;
         }
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__logo {
+      width: 70px;
+      height: 70px;
+      padding-bottom: 9px;
+    }
+    &__navigation {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
     }
     &__button {
       width: 166px;
       height: 26px;
       background-color: $colorPink;   
       border: none;
-      font-family: $fontFamily2;
+      font-family: $fontFamily1;
+      line-height: 20px;
       color: $colorWigth;
       font-size: 20px;
-      font-weight: 80px;
       margin: 0;
       padding: 5px 41px 5px 44px;
+      margin-bottom: 3px;
     }
+  }
+
+  .main-img {
+    max-width: 751px;
+    max-height: 422px;
+    position: absolute;
   }

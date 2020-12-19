@@ -2,3 +2,12 @@ $fontFamily1: 'Helvetica Neue Cyr Thin', 'AdobeInvisFont', 'Myriad Pro Regular';
 $fontFamily2: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
 $colorPink: #E71E6E;
 $colorWigth: #FFFFFF;
+
+@mixin headerTitle {
+    font-family: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
+    text-transform: uppercase;
+    color: $colorWigth;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+}

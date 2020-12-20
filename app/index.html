@@ -7,7 +7,7 @@
     <title>Spike</title>
 </head>
 <body>
-    <page class="page">
+    <div class="page">
         <header class="header">
             <div class="header__about">
                 <h1 class="header__title">Deadpool</h1>
@@ -65,8 +65,38 @@
                         </div>
                     </li>
                 </ul>
-            </section>            
+            </section>    
+            <section class="trailer">
+                <button class="trailer__video-play"></button>
+                <video class="trailer__video" src="##"
+                    poster="./images/dest/Layer 01@1X (1).png">
+                    <!-- <source src="kino.mp4" type="video/mp4">
+                    <source src="kino.ogg" type="video/ogg"> -->                    
+               </video>
+            </section>
+            <section class="slider">
+                <button class="slider__button slider__button_prev"></button>
+                <ul class="slider__elements">
+                    <li class="slider__element">
+                        <img src="./images/dest/pic (1)@1X.png" class="slider__image" alt="">
+                    </li>
+                    <li class="slider__element">
+                        <img src="./images/dest/pic (2)@1X.png" class="slider__image" alt="">
+                    </li>
+                    <li class="slider__element">
+                        <img src="./images/dest/pic (3)@1X.png" class="slider__image" alt="">
+                    </li>
+                </ul>
+                <button class="slider__button slider__button_next"></button>
+            </section>
         </main>
-    </page>
+        <footer class="footer">
+            <nav class="footer__navigation">
+                <a class="footer__link">Реклама</a>
+                <a class="footer__link">Условия использования</a>
+            </nav>
+            <p class="footer__title">© 2003–2016 Spike</p>
+        </footer>
+    </div>
 </body>
 </html>

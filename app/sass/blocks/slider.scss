@@ -1,0 +1,41 @@
+.slider {
+  @include rowDirection();
+  max-width: 685px;
+  padding: 67px 33px;
+
+  &__button {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    width: 43px;
+    height: 35px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    &_prev {
+      background-image: url('../../images/dest/prev@1X.png');
+    }
+    &_next {
+      background-image: url('../../images/dest/next@1X.png');
+    }
+    &:active {
+        border: none;
+    }
+  }
+  &__elements {
+    @include rowDirection();
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 30px;
+    margin: 0;
+  }
+  &__element {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    width: 166px;
+    height: 185px;
+    overflow: hidden;
+  }
+}

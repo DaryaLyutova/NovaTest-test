@@ -1,24 +1,36 @@
 $fontFamily1: 'Helvetica Neue Cyr Thin', 'AdobeInvisFont', 'Myriad Pro Regular';
 $fontFamily2: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
-$colorPink: #E71E6E;
-$colorWigth: #FFFFFF;
+$colorPink: #e71e6e;
+$colorWigth: #ffffff;
 $colorGrey: #101010;
+$moveWigth: 750px;
+$moveHeigth: 422px;
 
 @mixin headerTitle {
-    font-family: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
-    text-transform: uppercase;
-    color: $colorWigth;
-    text-align: left;
-    font-style: normal;
-    font-weight: normal;
+  font-family: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
+  text-transform: uppercase;
+  color: $colorWigth;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
 }
 
 @mixin rowDirection {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 @mixin columnDirection {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin buttonDefaultStyle {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }

@@ -1,0 +1,21 @@
+.trailer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  &__video-play {
+    @include buttonDefaultStyle();
+    display: flex;
+    position: absolute;
+    top: $moveHeigth * 0.5 - 50px;
+    right: $moveWigth * 0.5 - 50px;
+    background-image: url('../../images/dest/play@1X.png');
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+  }
+  &__video {
+      width: $moveWigth;
+      height: $moveHeigth;
+  }
+}

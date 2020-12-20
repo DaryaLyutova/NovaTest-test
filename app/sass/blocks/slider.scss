@@ -4,12 +4,11 @@
   padding: 67px 33px;
 
   &__button {
+    @include buttonDefaultStyle ();
     display: flex;
     margin: auto;
-    padding: 0;
     width: 43px;
     height: 35px;
-    border: none;
     align-items: center;
     justify-content: center;
     &_prev {

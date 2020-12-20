@@ -42,15 +42,14 @@
     @include columnDirection ();
   }
   &__button {
+    @include buttonDefaultStyle ();
     width: 166px;
     height: 26px;
     background-color: $colorPink;
-    border: none;
     font-family: $fontFamily1;
     line-height: 20px;
     color: $colorWigth;
     font-size: 20px;
-    margin: 0;
     padding: 5px 41px 5px 44px;
     margin-bottom: 3px;
   }

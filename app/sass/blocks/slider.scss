@@ -4,7 +4,7 @@
   padding: 67px 33px;
 
   &__button {
-    @include buttonDefaultStyle ();
+    @include buttonDefaultStyle();
     display: flex;
     margin: auto;
     width: 43px;
@@ -18,7 +18,7 @@
       background-image: url('../../images/dest/next@1X.png');
     }
     &:active {
-        border: none;
+      border: none;
     }
   }
   &__elements {
@@ -30,11 +30,16 @@
     margin: 0;
   }
   &__element {
-      display: flex;
-      align-content: center;
-      justify-content: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     width: 166px;
     height: 185px;
     overflow: hidden;
+    background-color: #563a3a;
+  }
+  &__image:hover {
+    cursor: url('../../images/dest/zoom_1X.cur'), pointer;
+    opacity: 0.5;
   }
 }

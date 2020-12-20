@@ -2,7 +2,10 @@
   position: relative;
   display: flex;
   width: 100%;
-  z-index: 1;
+  height: 100%;
+  background: rgba(42, 44, 47, 0.8);
+  background-size: cover;
+
   &__video-play {
     @include buttonDefaultStyle();
     display: flex;
@@ -15,7 +18,7 @@
     z-index: 4;
   }
   &__video {
-      width: $moveWigth;
-      height: $moveHeigth;
+    width: $moveWigth;
+    height: $moveHeigth;
   }
 }

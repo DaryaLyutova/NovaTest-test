@@ -3,7 +3,7 @@
   display: flex;
   width: 100%;
   height: 100%;
-  background: rgba(42, 44, 47, 0.8);
+  background-color: #563a3a;
   background-size: cover;
 
   &__video-play {
@@ -20,5 +20,6 @@
   &__video {
     width: $moveWigth;
     height: $moveHeigth;
+    opacity: 0.5;
   }
 }

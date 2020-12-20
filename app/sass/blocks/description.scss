@@ -1,4 +1,12 @@
 .description {
   @include columnDirection();
   background-color: #f5f5f5;
+
+  &__title {
+    color: $colorGrey;
+    font-family: $fontFamily1;
+    font-size: 24px;
+    margin: 0;
+    padding: 48px 65px 49px 34px;
+  }
 }

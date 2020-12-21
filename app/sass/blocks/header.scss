@@ -1,10 +1,10 @@
 .header {
   max-width: 1141px;
   width: 100%;
-  height: 422px;
+  height: $moveHeigth;
   @include rowDirection();
   justify-content: space-between;
-  background-size: 751px 422px;
+  background-size: $moveWigth $moveHeigth;
   background: url('../../images/dest/Layer 0@1X.jpeg') center no-repeat;
 
   &__about {
@@ -61,5 +61,34 @@
     font-size: 20px;
     padding: 5px 41px 5px 44px;
     margin-bottom: 3px;
+  }
+}
+
+@media all and (max-width: 910px) {
+  .header {
+    height: $moveHeigth910;
+    background-size: $moveWigth910 $moveHeigth910;
+    
+    &__title {
+      font-size: 80px;
+      line-height: 80px;
+    }
+    &__subtitle {
+      font-size: 25px;
+    }
+    &__logo {
+      width: 60px;
+      height: 60px;
+    }
+    &__navigation {
+      padding-top: 20px;
+    }
+    &__button {
+      width: 130px;
+      height: 23px;
+      line-height: 18px;
+      font-size: 18px;
+    }
+
   }
 }

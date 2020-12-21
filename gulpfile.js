@@ -40,15 +40,6 @@ function browsersync() {
 	})
 }
 
-// function pughtml() {
-// 	return src('app/page/index.pug')
-// 	    .pipe(concat('index.html'))// Конкатенируем в один файл
-// 	    .pipe(pug()) // Сжимаем 
-// 	    .pipe(dest('app/page/')) // Выгружаем готовый файл в папку назначения
-// 		.pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
-
-// }
-
 function scripts() {
 	return src(['app/js/app.js'])
 		.pipe(concat('app.min.js')) // Конкатенируем в один файл
@@ -119,8 +110,6 @@ exports.images = images;
 
 // Экспортируем функцию cleanimg() как таск cleanimg
 exports.cleanimg = cleanimg;
-
-// exports.pughtml = pughtml;
 
 // Создаём новый таск "build", который последовательно выполняет нужные операции
 exports.build = series(cleandist, styles, scripts, images, buildcopy);

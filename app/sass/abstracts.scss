@@ -5,6 +5,8 @@ $colorWigth: #ffffff;
 $colorGrey: #101010;
 $moveWigth: 750px;
 $moveHeigth: 422px;
+$moveWigth910: 563px;
+$moveHeigth910: 317px;
 
 @mixin headerTitle {
   font-family: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
@@ -50,19 +52,19 @@ $moveHeigth: 422px;
         top: 0;
     }
     25% {
-        left: 30px;
+        left: -20px;
         top: 30px;
     }
     50% {
-        left: 60px;
+        left: 0px;
         top: 0;
     }
     75% {
-        left: 90px;
+        left: 20px;
         top: 30px;
     }
     100% {
-        left: 120px;
+        left: 0px;
         top: 0;
     }
 } 

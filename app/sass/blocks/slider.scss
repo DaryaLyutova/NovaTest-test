@@ -9,6 +9,7 @@
     margin: auto;
     width: 43px;
     height: 35px;
+    background-size: 35px 35px;
     align-items: center;
     justify-content: center;
     &_prev {
@@ -42,5 +43,25 @@
   &__image:hover {
     cursor: url('../../images/dest/zoom_1X.cur'), pointer;
     opacity: 0.5;
+  }
+}
+
+@media all and (max-width: 910px) {
+  .slider {
+    max-width: 513px;
+    padding: 50px 25px;
+  
+    &__button {
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+    }
+    &__elements {
+      padding: 0 20px;
+    }
+    &__element {
+      width: 125px;
+      height: 139px;
+    }
   }
 }

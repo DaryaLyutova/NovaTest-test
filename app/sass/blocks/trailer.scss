@@ -13,10 +13,12 @@
     top: $moveHeigth * 0.5 - 50px;
     right: $moveWigth * 0.5 - 50px;
     background-image: url('../../images/dest/play@1X.png');
+    background-size: 100px 100px;
     width: 100px;
     height: 100px;
     z-index: 4;
     &:hover {
+      cursor: pointer;
       animation: rotation 20s linear infinite;
     }
   }
@@ -24,5 +26,21 @@
     width: $moveWigth;
     height: $moveHeigth;
     opacity: 0.5;
+  }
+}
+
+@media all and (max-width: 910px) {
+  .trailer {  
+    &__video-play {
+      top: $moveHeigth910 * 0.5 - 40px;
+      right: $moveWigth910 * 0.5 - 40px;
+      background-size: 80px 80px;
+      width: 80px;
+      height: 80px;
+    }
+    &__video {
+      width: $moveWigth910;
+      height: $moveHeigth910;
+    }
   }
 }

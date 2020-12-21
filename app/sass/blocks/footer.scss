@@ -21,3 +21,16 @@
     text-decoration: none;
   }
 }
+
+@media all and (max-width: 910px) {
+  .footer {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 20px 0 18px 0;
+  
+    &__info {
+      @include rowDirection();
+      width: 312px;
+    }
+  }
+}

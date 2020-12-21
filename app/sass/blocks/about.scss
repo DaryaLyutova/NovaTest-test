@@ -13,3 +13,17 @@
     padding: 19px 0 0 29px;
   }
 }
+
+@media all and (max-width: 910px) {
+  .about {
+    &__image {
+      width: 140px;
+      height: 200px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      max-width: 400px;
+      padding: 15px 0 0 25px;
+    }
+  }
+}

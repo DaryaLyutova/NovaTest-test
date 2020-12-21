@@ -16,6 +16,9 @@
     width: 100px;
     height: 100px;
     z-index: 4;
+    &:hover {
+      animation: rotation 20s linear infinite;
+    }
   }
   &__video {
     width: $moveWigth;

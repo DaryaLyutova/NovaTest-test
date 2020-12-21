@@ -25,7 +25,9 @@
     margin: 0;
     padding: 0;
     &_color {
+      position: relative;
       color: $colorPink;
+      animation: move_bg 5s linear infinite alternate;
     }
   }
   &__main {

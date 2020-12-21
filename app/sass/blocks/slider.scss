@@ -17,8 +17,8 @@
     &_next {
       background-image: url('../../images/dest/next@1X.png');
     }
-    &:active {
-      border: none;
+    &:hover {
+      cursor: pointer;
     }
   }
   &__elements {
@@ -28,6 +28,7 @@
     list-style-type: none;
     padding: 0 30px;
     margin: 0;
+    overflow: hidden;
   }
   &__element {
     display: flex;

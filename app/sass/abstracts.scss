@@ -34,3 +34,35 @@ $moveHeigth: 422px;
   color: inherit;
   background-color: transparent;
 }
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+  }
+
+  @keyframes move_bg {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 30px;
+        top: 30px;
+    }
+    50% {
+        left: 60px;
+        top: 0;
+    }
+    75% {
+        left: 90px;
+        top: 30px;
+    }
+    100% {
+        left: 120px;
+        top: 0;
+    }
+} 

@@ -1,6 +1,5 @@
 .page {
-  background: url('../../images/dest/cool_pic.svg') right bottom no-repeat,
-    linear-gradient(#101010);
+  background: url('../../images/dest/cool_pic.svg') right bottom no-repeat, linear-gradient(45deg, #101010, #101010);
   background-blend-mode: screen;
   background-size: 640px 400px;
   @include columnDirection();

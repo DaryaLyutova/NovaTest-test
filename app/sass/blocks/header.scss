@@ -35,7 +35,14 @@
   &__logo {
     width: 70px;
     height: 70px;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
   }
   &__navigation {
     padding-top: 30px;

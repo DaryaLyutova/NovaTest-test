@@ -1,4 +1,23 @@
 .footer {
-    background-image: url('../../images/dest/cool_pic@1X.png');
-    background-size: 640px 400px;
+  display: flex;
+  max-width: $moveWigth;
+  width: 100%;
+  justify-content: flex-end;
+  color: $colorWigth;
+  font-family: $fontFamily1;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 23px 0 21px 0;
+
+  &__info {
+    @include rowDirection();
+    width: 416px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    color: $colorWigth;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }

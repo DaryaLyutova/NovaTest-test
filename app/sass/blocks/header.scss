@@ -2,13 +2,13 @@
   max-width: 1141px;
   width: 100%;
   height: 422px;
-  @include rowDirection ();
+  @include rowDirection();
   justify-content: space-between;
   background-size: 751px 422px;
   background: url('../../images/dest/Layer 0@1X.jpeg') center no-repeat;
 
   &__about {
-    @include columnDirection ();
+    @include columnDirection();
     align-items: flex-start;
     max-width: 300px;
     text-align: left;
@@ -29,7 +29,7 @@
     }
   }
   &__main {
-    @include columnDirection ();
+    @include columnDirection();
     align-items: center;
   }
   &__logo {
@@ -39,10 +39,10 @@
   }
   &__navigation {
     padding-top: 30px;
-    @include columnDirection ();
+    @include columnDirection();
   }
   &__button {
-    @include buttonDefaultStyle ();
+    @include buttonDefaultStyle();
     width: 166px;
     height: 26px;
     background-color: $colorPink;

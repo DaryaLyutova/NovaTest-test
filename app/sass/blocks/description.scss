@@ -1,6 +1,7 @@
 .description {
   @include columnDirection();
   background-color: #f5f5f5;
+  max-width: $moveWigth;
 
   &__title {
     color: $colorGrey;

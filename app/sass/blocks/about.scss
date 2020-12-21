@@ -1,15 +1,15 @@
 .about {
-    @include rowDirection ();
+  @include rowDirection();
 
-    &__image {
-      width: 165px;
-      height: 241px;
-    }
-    &__subtitle {
-      font-size: 18px;
-      font-family: $fontFamily1;
-      color: $colorGrey;
-      max-width: 454px;
-      padding: 19px 0 0 29px;
-    }
+  &__image {
+    width: 165px;
+    height: 241px;
   }
+  &__subtitle {
+    font-size: 18px;
+    font-family: $fontFamily1;
+    color: $colorGrey;
+    max-width: 454px;
+    padding: 19px 0 0 29px;
+  }
+}

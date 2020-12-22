@@ -7,6 +7,8 @@ $moveWigth: 750px;
 $moveHeigth: 422px;
 $moveWigth910: 563px;
 $moveHeigth910: 317px;
+$moveWigth768: 522px;
+$moveHeigth768: 293px;
 
 @mixin headerTitle {
   font-family: 'Bebas Neue', 'AdobeInvisFont', 'Myriad Pro Regular';
@@ -38,33 +40,33 @@ $moveHeigth910: 317px;
 }
 
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-  @keyframes move_bg {
-    0% {
-        left: 0;
-        top: 0;
-    }
-    25% {
-        left: -20px;
-        top: 30px;
-    }
-    50% {
-        left: 0px;
-        top: 0;
-    }
-    75% {
-        left: 20px;
-        top: 30px;
-    }
-    100% {
-        left: 0px;
-        top: 0;
-    }
-} 
+@keyframes move_bg {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: -20px;
+    top: 30px;
+  }
+  50% {
+    left: 0px;
+    top: 0;
+  }
+  75% {
+    left: 20px;
+    top: 30px;
+  }
+  100% {
+    left: 0px;
+    top: 0;
+  }
+}

@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   align-items: center;
+  width: 100%;
 
   &__title {
     color: $colorGrey;
@@ -17,12 +18,12 @@
     justify-content: space-between;
     list-style-type: none;
     color: $colorGrey;
-    font-size: 18px;
     font-family: $fontFamily1;
     margin: auto 0;
     padding: 0;
   }
   &__item {
+    font-size: 18px;
     width: 100%;
   }
   &__slider {
@@ -59,8 +60,8 @@
       font-size: 18px;
       padding: 36px 49px 36px 26px;
     }
-    &__items {
-      font-size: 18px;
+    &__item {
+      font-size: 16px;
     }
     &__slider {
       width: 100%;
@@ -74,6 +75,31 @@
     }
     &__slider-red {
       width: 1px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .reviews {
+    &__title {
+      font-size: 15px; //
+      padding: 25px 20px 25px 20px;
+    }
+    &__item {
+      font-size: 10px; //
+      padding-left: 30px;
+    }
+    &__slider {
+      height: 31px;
+    }
+    &__slider-green {
+      height: 31px;
+    }
+    &__slider-grey {
+      height: 31px;
+    }
+    &__slider-red {
+      height: 31px;
     }
   }
 }

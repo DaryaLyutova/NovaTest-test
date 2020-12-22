@@ -1,5 +1,6 @@
 .about {
   @include rowDirection();
+  width: 100%;
 
   &__image {
     width: 165px;
@@ -11,6 +12,7 @@
     color: $colorGrey;
     max-width: 454px;
     padding: 19px 0 0 29px;
+    margin: 0;
   }
 }
 
@@ -18,12 +20,26 @@
   .about {
     &__image {
       width: 140px;
-      height: 200px;
+      height: 205px;
     }
     &__subtitle {
       font-size: 15px;
-      max-width: 400px;
+      max-width: 350px;
       padding: 15px 0 0 25px;
+    }
+  }
+}
+
+@media all and (max-width: 7685px) {
+  .about {
+    &__image {
+      width: 120px;
+      height: 176px;
+    }
+    &__subtitle {
+      font-size: 13px;
+      max-width: 310px;
+      padding: 13px 0 0 15px;
     }
   }
 }

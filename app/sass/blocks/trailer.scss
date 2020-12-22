@@ -44,3 +44,19 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .trailer {
+    &__video-play {
+      top: $moveHeigth768 * 0.5 - 25px;
+      right: $moveWigth768 * 0.5 - 25px;
+      background-size: 50px 50px;
+      width: 50px;
+      height: 50px;
+    }
+    &__video {
+      width: $moveWigth768;
+      height: $moveHeigth768;
+    }
+  }
+}

@@ -24,6 +24,7 @@
 
 @media all and (max-width: 910px) {
   .footer {
+    max-width: $moveWigth910;
     font-size: 12px;
     line-height: 18px;
     padding: 20px 0 18px 0;
@@ -31,6 +32,19 @@
     &__info {
       @include rowDirection();
       width: 312px;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .footer {
+    max-width: $moveWigth768;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 20px 0 18px 0;
+  
+    &__info {
+      @include rowDirection();
+      width: 250px;
     }
   }
 }

@@ -88,7 +88,40 @@
       height: 23px;
       line-height: 18px;
       font-size: 18px;
+      padding: 5px 35px 5px 35px;
     }
 
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    max-width: 688px;
+    height: $moveHeigth768;
+    background-size: $moveWigth768 $moveHeigth768;
+
+    &__title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+    &__logo {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 5px;
+    }
+    &__navigation {
+      padding-top: 15px;
+    }
+    &__button {
+      width: 83px;
+      height: 13px;
+      line-height: 10px;
+      font-size: 10px;
+      padding: 3px 21px 3px 22px;
+      margin-bottom: 2px;
+    }
   }
 }
